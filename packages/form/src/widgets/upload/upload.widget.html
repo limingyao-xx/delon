@@ -25,6 +25,7 @@
              [nzBeforeUpload]="i.beforeUpload"
              [nzCustomRequest]="i.customRequest"
              [nzRemove]="ui.remove || handleRemove"
+             [nzShowButton]="fileList.length<ui.allowUploadTotal"
              [nzPreview]="handlePreview"
              (nzChange)="change($event)">
     <ng-container [ngSwitch]="btnType">
